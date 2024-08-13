@@ -1,0 +1,55 @@
+{
+  "name": "reactyy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@eslint/js": "^9.8.0",
+    "@storybook/addon-essentials": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/addon-interactions": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/addon-links": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/addon-onboarding": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/blocks": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/experimental-addon-vitest": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/experimental-vitest-plugin": "^0.0.4",
+    "@storybook/react": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/react-vite": "0.0.0-pr-28768-sha-81281ec6",
+    "@storybook/test": "0.0.0-pr-28768-sha-81281ec6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/browser": "^2.0.5",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-storybook": "^0.8.0",
+    "globals": "^15.9.0",
+    "jsdom": "^24.1.1",
+    "playwright": "^1.46.0",
+    "storybook": "0.0.0-pr-28768-sha-81281ec6",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.4.0",
+    "vitest": "patch:vitest@npm%3A2.0.5#~/.yarn/patches/vitest-npm-2.0.5-3ee23fccc7.patch"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "packageManager": "yarn@4.4.0"
+}

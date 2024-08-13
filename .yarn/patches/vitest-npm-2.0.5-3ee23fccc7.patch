@@ -1,0 +1,16 @@
+diff --git a/dist/chunks/cli-api.OKfd3qJ0.js b/dist/chunks/cli-api.OKfd3qJ0.js
+index ba1849d432a4afc57f022c58912409da6fd2fcc3..73d84a8f11762a5337f2b46237a5276cb6b0225e 100644
+--- a/dist/chunks/cli-api.OKfd3qJ0.js
++++ b/dist/chunks/cli-api.OKfd3qJ0.js
+@@ -14125,6 +14125,11 @@ class WorkspaceProject {
+     if (this._globalSetups) {
+       return;
+     }
++    console.trace('this.config before loadGlobalSetupFiles', {
++      globalSetup: this.config.globalSetup,
++      setupFiles: this.config.setupFiles,
++      include: this.config.include,
++    })
+     this._globalSetups = await loadGlobalSetupFiles(
+       this.runner,
+       this.config.globalSetup
